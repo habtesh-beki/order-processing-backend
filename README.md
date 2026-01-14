@@ -93,8 +93,8 @@ The core business logic is implemented as a single PostgreSQL function:
 CREATE OR REPLACE FUNCTION process_purchase(
   p_business_id UUID,
   p_customer_id UUID,
-  p_items JSONB
-) RETURNS JSONB
+  p_items item
+) RETURNS item
 ```
 
 ### How It Works
